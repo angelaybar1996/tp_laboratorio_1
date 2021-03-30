@@ -61,7 +61,8 @@ int main(void)
 			   }
 			   else
 			   {
-				  operandoDos=getInt("2.Ingrese el 2do operando:");
+				  printf("2.Ingrese el 2do operando:");
+				  scanf("%d",&operandoDos);
 				  printf("B:%d \n",operandoDos);
 				  system("pause");
 				  flagB=1;

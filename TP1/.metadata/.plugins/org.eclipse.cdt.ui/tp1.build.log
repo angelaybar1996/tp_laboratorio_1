@@ -1,1 +1,7 @@
-Info: Nothing to build for tp1
+13:08:50 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp1.o" "..\\src\\tp1.c" 
+gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+
+13:08:50 Build Finished. 0 errors, 0 warnings. (took 433ms)
+

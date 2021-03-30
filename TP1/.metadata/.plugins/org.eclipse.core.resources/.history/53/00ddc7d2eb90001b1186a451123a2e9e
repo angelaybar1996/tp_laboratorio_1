@@ -47,8 +47,8 @@ int main(void)
 		switch(opcion)
 		{
 		   case 1:
-
-			  operandoUno=getInt("1.Ingrese el 1er operando:");
+			  printf("1.Ingrese el 1er operando:");
+			  scanf("%d",&operandoUno);
 			  printf("A:%d \n",operandoUno);
 			  system("pause");
 			  flagA=1;
@@ -61,7 +61,8 @@ int main(void)
 			   }
 			   else
 			   {
-				  operandoDos=getInt("2.Ingrese el 2do operando:");
+				  printf("2.Ingrese el 2do operando:");
+				  scanf("%d",&operandoDos);
 				  printf("B:%d \n",operandoDos);
 				  system("pause");
 				  flagB=1;

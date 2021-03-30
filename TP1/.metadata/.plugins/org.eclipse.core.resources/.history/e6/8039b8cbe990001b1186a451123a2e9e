@@ -42,13 +42,23 @@ int main(void)
 
 	do
 	{
-		opcion=menu();
+		system("cls");//limpia la pantalla
+		printf("***MENU DE OPCIONES*** \n\n");
+
+		printf("1.Ingrese el 1er operando \n");//opcion 1
+		printf("2.Ingrese el 2do operando \n");//opcion 2
+		printf("3.Calcular todas las operaciones \n");//opcion 3
+		printf("4.Informar resultados \n");//opcion 4
+		printf("5.Salir \n");
+
+		printf("Ingrese opcion:");
+		scanf("%d",&opcion);
 
 		switch(opcion)
 		{
 		   case 1:
-
-			  operandoUno=getInt("1.Ingrese el 1er operando:");
+			  printf("1.Ingrese el 1er operando:");
+			  scanf("%d",&operandoUno);
 			  printf("A:%d \n",operandoUno);
 			  system("pause");
 			  flagA=1;
@@ -61,7 +71,8 @@ int main(void)
 			   }
 			   else
 			   {
-				  operandoDos=getInt("2.Ingrese el 2do operando:");
+				  printf("2.Ingrese el 2do operando:");
+				  scanf("%d",&operandoDos);
 				  printf("B:%d \n",operandoDos);
 				  system("pause");
 				  flagB=1;

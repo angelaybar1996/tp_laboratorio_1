@@ -26,14 +26,11 @@ int menu()
 
 	return opcion;
 }
-
-int getInt(char mensaje[])
+int getInt(int numero)
 {
-    int auxiliar;
-    printf("%s",mensaje);
-    scanf("%d",&auxiliar);
-    return auxiliar;
+	return numero;
 }
+
 
 
 int sumar(int operadorUno,int operadorDos)

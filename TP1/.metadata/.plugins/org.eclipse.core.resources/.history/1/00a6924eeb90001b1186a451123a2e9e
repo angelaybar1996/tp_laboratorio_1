@@ -9,7 +9,6 @@
 #define FUNCIONES_H_
 
 int menu();
-int getInt(char mensaje[]);
 
 int sumar(int operadorUno,int operadorDos);
 int restar(int operadorUno,int operadorDos);
