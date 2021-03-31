@@ -9,12 +9,12 @@
 #define FUNCIONES_H_
 
 int menu();
-int getInt(char mensaje[]);
+int getNumero(int* pResultado, char* mensaje,char* mensajeError);
 
 int sumar(int operadorUno,int operadorDos);
 int restar(int operadorUno,int operadorDos);
 int multiplicar(int operadorUno,int operadorDos);
 int dividir(int operadorUno,int operadorDos,float*pResultado);
-int factorial(int operador,int* pResultado);
+int factorial(int operador,int* pResultado,char* mensajeError);
 
 #endif /* FUNCIONES_H_ */

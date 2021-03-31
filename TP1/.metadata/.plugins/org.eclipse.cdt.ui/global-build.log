@@ -25,3 +25,265 @@ gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o"
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp1.o" "..\\src\\tp1.c" 
 gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+Info: Nothing to build for tp1
+Info: Nothing to build for tp1
+13:20:41 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp1.o" "..\\src\\tp1.c" 
+gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+Info: Nothing to build for tp1
+Info: Nothing to build for tp1
+Info: Nothing to build for tp1
+13:38:53 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'getNumero':
+..\src\funciones.c:55:6: error: redeclaration of 'retorno' with no linkage
+   55 |  int retorno=-1;
+      |      ^~~~~~~
+..\src\funciones.c:52:6: note: previous declaration of 'retorno' was here
+   52 |  int retorno;
+      |      ^~~~~~~
+..\src\funciones.c:62:12: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   62 |    scanf("%d",auxiliar);
+      |           ~^  ~~~~~~~~
+      |            |  |
+      |            |  int
+      |            int *
+13:39:43 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp1.o" "..\\src\\tp1.c" 
+gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+Info: Nothing to build for tp1
+13:41:52 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp1.o" "..\\src\\tp1.c" 
+gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+Info: Nothing to build for tp1
+14:19:57 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp1.o" "..\\src\\tp1.c" 
+..\src\tp1.c: In function 'main':
+..\src\tp1.c:74:19: warning: implicit declaration of function 'getInt'; did you mean 'getenv'? [-Wimplicit-function-declaration]
+   74 |       operandoDos=getInt("2.Ingrese el 2do operando:");
+      |                   ^~~~~~
+      |                   getenv
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'getNumero':
+..\src\funciones.c:36:6: error: redeclaration of 'retorno' with no linkage
+   36 |  int retorno=-1;
+      |      ^~~~~~~
+..\src\funciones.c:33:6: note: previous declaration of 'retorno' was here
+   33 |  int retorno;
+      |      ^~~~~~~
+..\src\funciones.c:42:14: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   42 |   if(scanf("%d",auxiliar)==1)
+      |             ~^  ~~~~~~~~
+      |              |  |
+      |              |  int
+      |              int *
+..\src\funciones.c:47:5: error: break statement not within loop or switch
+   47 |     break;
+      |     ^~~~~
+14:20:28 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'getNumero':
+..\src\funciones.c:42:14: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   42 |   if(scanf("%d",auxiliar)==1)
+      |             ~^  ~~~~~~~~
+      |              |  |
+      |              |  int
+      |              int *
+..\src\funciones.c:47:5: error: break statement not within loop or switch
+   47 |     break;
+      |     ^~~~~
+14:20:52 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'getNumero':
+..\src\funciones.c:42:14: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   42 |   if(scanf("%d",auxiliar)==1)
+      |             ~^  ~~~~~~~~
+      |              |  |
+      |              |  int
+      |              int *
+..\src\funciones.c:47:5: error: break statement not within loop or switch
+   47 |     break;
+      |     ^~~~~
+14:21:05 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'getNumero':
+..\src\funciones.c:42:14: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   42 |   if(scanf("%d",auxiliar)==1)
+      |             ~^  ~~~~~~~~
+      |              |  |
+      |              |  int
+      |              int *
+..\src\funciones.c:47:5: error: break statement not within loop or switch
+   47 |     break;
+      |     ^~~~~
+14:23:12 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'getNumero':
+..\src\funciones.c:42:14: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   42 |   if(scanf("%d",auxiliar)==1)
+      |             ~^  ~~~~~~~~
+      |              |  |
+      |              |  int
+      |              int *
+..\src\funciones.c:42:6: warning: 'auxiliar' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   42 |   if(scanf("%d",auxiliar)==1)
+      |      ^~~~~~~~~~~~~~~~~~~~
+gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\tp1.o: in function `main':
+C:\Users\RYZEN 20\Desktop\Repositorios Clonados\tp_laboratorio_1\TP1\tp1\Debug/../src/tp1.c:74: undefined reference to `getInt'
+collect2.exe: error: ld returned 1 exit status
+14:24:14 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp1.o" "..\\src\\tp1.c" 
+..\src\tp1.c: In function 'main':
+..\src\tp1.c:90:21: warning: 'operandoDos' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   90 |       resultadoSuma=sumar(operandoUno,operandoDos);
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+Info: Nothing to build for tp1
+Info: Nothing to build for tp1
+Info: Nothing to build for tp1
+Info: Nothing to build for tp1
+14:29:33 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp1.o" "..\\src\\tp1.c" 
+gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+Info: Nothing to build for tp1
+14:33:10 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'getNumero':
+..\src\funciones.c:42:14: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   42 |   if(scanf("%d",auxiliar))
+      |             ~^  ~~~~~~~~
+      |              |  |
+      |              |  int
+      |              int *
+..\src\funciones.c:42:6: warning: 'auxiliar' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   42 |   if(scanf("%d",auxiliar))
+      |      ^~~~~~~~~~~~~~~~~~~~
+gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+14:34:30 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'getNumero':
+..\src\funciones.c:42:14: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   42 |   if(scanf("%d",auxiliar)==1)
+      |             ~^  ~~~~~~~~
+      |              |  |
+      |              |  int
+      |              int *
+..\src\funciones.c:42:6: warning: 'auxiliar' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   42 |   if(scanf("%d",auxiliar)==1)
+      |      ^~~~~~~~~~~~~~~~~~~~
+gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+Info: Nothing to build for tp1
+14:35:01 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'getNumero':
+..\src\funciones.c:42:14: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   42 |   if(scanf("%d",auxiliar)==1)
+      |             ~^  ~~~~~~~~
+      |              |  |
+      |              |  int
+      |              int *
+..\src\funciones.c:42:6: warning: 'auxiliar' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   42 |   if(scanf("%d",auxiliar)==1)
+      |      ^~~~~~~~~~~~~~~~~~~~
+gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+Info: Nothing to build for tp1
+Info: Nothing to build for tp1
+Info: Nothing to build for tp1
+22:53:33 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'getNumero':
+..\src\funciones.c:42:14: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   42 |   if(scanf("%d",auxiliar))
+      |             ~^  ~~~~~~~~
+      |              |  |
+      |              |  int
+      |              int *
+..\src\funciones.c:42:6: warning: 'auxiliar' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   42 |   if(scanf("%d",auxiliar))
+      |      ^~~~~~~~~~~~~~~~~~~~
+gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+22:54:52 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+..\src\funciones.c: In function 'getNumero':
+..\src\funciones.c:43:20: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
+   43 |   verifica=scanf("%d",auxiliar);
+      |                   ~^  ~~~~~~~~
+      |                    |  |
+      |                    |  int
+      |                    int *
+..\src\funciones.c:43:12: warning: 'auxiliar' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   43 |   verifica=scanf("%d",auxiliar);
+      |            ^~~~~~~~~~~~~~~~~~~~
+gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+22:55:24 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+22:57:09 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+23:01:01 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp1.o" "..\\src\\tp1.c" 
+gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+Info: Nothing to build for tp1
+23:12:05 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+Info: Nothing to build for tp1
+Info: Nothing to build for tp1
+23:16:27 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp1.o" "..\\src\\tp1.c" 
+gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+Info: Nothing to build for tp1
+23:17:13 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+Info: Nothing to build for tp1
+23:52:50 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp1.o" "..\\src\\tp1.c" 
+..\src\tp1.c: In function 'main':
+..\src\tp1.c:92:24: error: too many arguments to function 'factorial'
+   92 |       retornoFactorial=factorial(operandoUno,&factorialUno,"no existe factorial");
+      |                        ^~~~~~~~~
+In file included from ..\src\tp1.c:14:
+..\src\funciones.h:18:5: note: declared here
+   18 | int factorial(int operador,int* pResultado);
+      |     ^~~~~~~~~
+..\src\tp1.c:93:24: error: too many arguments to function 'factorial'
+   93 |       retornoFactorial=factorial(operandoDos,&factorialDos,"no existe factorial");
+      |                        ^~~~~~~~~
+In file included from ..\src\tp1.c:14:
+..\src\funciones.h:18:5: note: declared here
+   18 | int factorial(int operador,int* pResultado);
+      |     ^~~~~~~~~
+23:54:28 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp1.o" "..\\src\\tp1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+Info: Nothing to build for tp1

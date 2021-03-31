@@ -10,6 +10,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 #include "funciones.h"
 
 int main(void)
@@ -19,6 +20,7 @@ int main(void)
 
 	int operandoUno;
 	int operandoDos;
+	int validacion;
 	int opcion;
 	char salir;
 	int flagA;
@@ -48,10 +50,13 @@ int main(void)
 		{
 		   case 1:
 
-			  operandoUno=getInt("1.Ingrese el 1er operando:");
-			  printf("A:%d \n",operandoUno);
-			  system("pause");
-			  flagA=1;
+			  validacion=getNumero(&operandoUno,"Ingrese el 1er operando:","Error,debe ingresar un numero entero \n");
+			  if(validacion==0)
+			  {
+				  printf("A:%d \n",operandoUno);
+				  system("pause");
+				  flagA=1;
+			  }
 		   break;
 		   case 2:
 			   if(flagA==0)
@@ -61,10 +66,13 @@ int main(void)
 			   }
 			   else
 			   {
-				  operandoDos=getInt("2.Ingrese el 2do operando:");
-				  printf("B:%d \n",operandoDos);
-				  system("pause");
-				  flagB=1;
+				  validacion=getNumero(&operandoDos,"Ingrese el 2do operando:","Error,debe ingresar un numero entero \n");
+				  if(validacion==0)
+				  {
+					  printf("B:%d \n",operandoDos);
+					  system("pause");
+					  flagB=1;
+				  }
 			   }
 		  break;
 		  case 3:
@@ -81,8 +89,8 @@ int main(void)
 				  resultadoResta=restar(operandoUno,operandoDos);
 				  resultadoMultiplicacion=multiplicar(operandoUno,operandoDos);
 				  retornoDivision=dividir(operandoUno,operandoDos,&resultadoDivision);
-				  retornoFactorial=factorial(operandoUno,&factorialUno);
-				  retornoFactorial=factorial(operandoDos,&factorialDos);
+				  retornoFactorial=factorial(operandoUno,&factorialUno,"no existe factorial");
+				  retornoFactorial=factorial(operandoDos,&factorialDos,"no existe factorial");
 
 				  printf("TODAS LAS OPERACIONES FUERON CALCULADAS \n");
 				  system("pause");
@@ -117,13 +125,13 @@ int main(void)
 				  if(retornoFactorial==0)
 				  {
 					  printf("El factorial de %d es %d \n",operandoUno,factorialUno);
+				  }
+
+				  if(retornoFactorial==0)
+				  {
 					  printf("El factorial de %d es %d \n",operandoDos,factorialDos);
 				  }
-				  else
-				  {
-					  printf("no existe factorial de %d \n",factorialUno);
-					  printf("no existe factorial de %d \n",factorialDos);
-				  }
+
 				  system("pause");
 			  }
 		  break;
@@ -149,6 +157,7 @@ int main(void)
 			  }
 		  break;
 		  default:
+			  fflush(stdin);
 			  printf("Error,la opcion no es valida \n");
 			  system("pause");
 		  break;
