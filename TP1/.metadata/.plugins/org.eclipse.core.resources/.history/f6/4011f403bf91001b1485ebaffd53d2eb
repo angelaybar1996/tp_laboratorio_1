@@ -123,6 +123,7 @@ int main(void)
 					  printf("No se puede dividir por cero \n");
 				  }
 
+                  //arreglar por aca esto
 				  if(retornoFactorialUno==0)
 				  {
 					  printf("El factorial de %d es %d \n",operandoUno,factorialUno);

@@ -32,8 +32,7 @@ int main(void)
 	int resultadoMultiplicacion;
 	float resultadoDivision;
 	int retornoDivision;
-	int retornoFactorialUno;
-	int retornoFactorialDos;
+	int retornoFactorial;
 	int factorialUno;
 	int factorialDos;
 
@@ -90,8 +89,8 @@ int main(void)
 				  resultadoResta=restar(operandoUno,operandoDos);
 				  resultadoMultiplicacion=multiplicar(operandoUno,operandoDos);
 				  retornoDivision=dividir(operandoUno,operandoDos,&resultadoDivision);
-				  retornoFactorialUno=factorial(operandoUno,&factorialUno);
-				  retornoFactorialDos=factorial(operandoDos,&factorialDos);
+				  retornoFactorial=factorial(operandoUno,&factorialUno);
+				  retornoFactorial=factorial(operandoDos,&factorialDos);
 
 				  printf("TODAS LAS OPERACIONES FUERON CALCULADAS \n");
 				  system("pause");
@@ -123,22 +122,15 @@ int main(void)
 					  printf("No se puede dividir por cero \n");
 				  }
 
-				  if(retornoFactorialUno==0)
+                  //arreglar por aca esto
+				  if(retornoFactorial==0)
 				  {
 					  printf("El factorial de %d es %d \n",operandoUno,factorialUno);
 				  }
-				  else
-				  {
-					  printf("No existe factorial de %d \n",operandoUno);
-				  }
 
-				  if(retornoFactorialDos==0)
+				  if(retornoFactorial==0)
 				  {
 					  printf("El factorial de %d es %d \n",operandoDos,factorialDos);
-				  }
-				  else
-				  {
-					  printf("No existe factorial de %d\n",operandoDos);
 				  }
 
 				  system("pause");
