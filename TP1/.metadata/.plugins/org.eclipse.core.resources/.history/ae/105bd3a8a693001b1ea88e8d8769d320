@@ -139,7 +139,7 @@ int dividir(int operadorUno,int operadorDos,float*pResultado)
  */
 int factorial(int operador,long long int* pResultado)
 {
-    long long int factorial;
+    int factorial;
     int retorno;
 
     factorial=1;

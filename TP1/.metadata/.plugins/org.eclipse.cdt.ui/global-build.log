@@ -321,3 +321,86 @@ Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp1.o" "..\\src\\tp1.c" 
 gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
 Info: Nothing to build for tp1
+21:51:48 **** Rebuild of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp1.o" "..\\src\\tp1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+Info: Nothing to build for tp1
+Info: Nothing to build for tp1
+21:55:39 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp1.o" "..\\src\\tp1.c" 
+..\src\tp1.c: In function 'main':
+..\src\tp1.c:127:39: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long long int' [-Wformat=]
+  127 |        printf("El factorial de %d es %d \n",operandoUno,factorialUno);
+      |                                      ~^                 ~~~~~~~~~~~~
+      |                                       |                 |
+      |                                       int               long long int
+      |                                      %I64d
+..\src\tp1.c:136:39: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long long int' [-Wformat=]
+  136 |        printf("El factorial de %d es %d \n",operandoDos,factorialDos);
+      |                                      ~^                 ~~~~~~~~~~~~
+      |                                       |                 |
+      |                                       int               long long int
+      |                                      %I64d
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+Info: Nothing to build for tp1
+21:58:08 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp1.o" "..\\src\\tp1.c" 
+..\src\tp1.c: In function 'main':
+..\src\tp1.c:127:40: warning: unknown conversion type character 'l' in format [-Wformat=]
+  127 |        printf("El factorial de %d es %lld \n",operandoUno,factorialUno);
+      |                                        ^
+..\src\tp1.c:127:15: warning: too many arguments for format [-Wformat-extra-args]
+  127 |        printf("El factorial de %d es %lld \n",operandoUno,factorialUno);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\tp1.c:136:40: warning: unknown conversion type character 'l' in format [-Wformat=]
+  136 |        printf("El factorial de %d es %lld \n",operandoDos,factorialDos);
+      |                                        ^
+..\src\tp1.c:136:15: warning: too many arguments for format [-Wformat-extra-args]
+  136 |        printf("El factorial de %d es %lld \n",operandoDos,factorialDos);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+22:01:35 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp1.o" "..\\src\\tp1.c" 
+..\src\tp1.c: In function 'main':
+..\src\tp1.c:127:40: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'long long int' [-Wformat=]
+  127 |        printf("El factorial de %d es %ld \n",operandoUno,factorialUno);
+      |                                      ~~^                 ~~~~~~~~~~~~
+      |                                        |                 |
+      |                                        long int          long long int
+      |                                      %I64d
+..\src\tp1.c:136:40: warning: format '%ld' expects argument of type 'long int', but argument 3 has type 'long long int' [-Wformat=]
+  136 |        printf("El factorial de %d es %ld \n",operandoDos,factorialDos);
+      |                                      ~~^                 ~~~~~~~~~~~~
+      |                                        |                 |
+      |                                        long int          long long int
+      |                                      %I64d
+gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+Info: Nothing to build for tp1
+22:06:36 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tp1.o" "..\\src\\tp1.c" 
+..\src\tp1.c: In function 'main':
+..\src\tp1.c:127:40: warning: unknown conversion type character 'l' in format [-Wformat=]
+  127 |        printf("El factorial de %d es %lld \n",operandoUno,factorialUno);
+      |                                        ^
+..\src\tp1.c:127:15: warning: too many arguments for format [-Wformat-extra-args]
+  127 |        printf("El factorial de %d es %lld \n",operandoUno,factorialUno);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\tp1.c:136:40: warning: unknown conversion type character 'l' in format [-Wformat=]
+  136 |        printf("El factorial de %d es %lld \n",operandoDos,factorialDos);
+      |                                        ^
+..\src\tp1.c:136:15: warning: too many arguments for format [-Wformat-extra-args]
+  136 |        printf("El factorial de %d es %lld \n",operandoDos,factorialDos);
+      |               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+00:29:21 **** Incremental Build of configuration Debug for project tp1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\funciones.o" "..\\src\\funciones.c" 
+gcc -o tp1.exe "src\\funciones.o" "src\\tp1.o" 
+Info: Nothing to build for tp1

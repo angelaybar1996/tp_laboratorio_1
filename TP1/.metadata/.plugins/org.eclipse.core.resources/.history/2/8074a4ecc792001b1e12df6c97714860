@@ -137,9 +137,9 @@ int dividir(int operadorUno,int operadorDos,float*pResultado)
  * param pResultado es la direccion de memoria donde se va a mandar el resultado
  * return devuelve -1 en caso de que no se pueda realizar el factorial y 0 en caso de que si se pueda
  */
-int factorial(int operador,long long int* pResultado)
+int factorial(int operador,int* pResultado)
 {
-    long long int factorial;
+    int factorial;
     int retorno;
 
     factorial=1;
