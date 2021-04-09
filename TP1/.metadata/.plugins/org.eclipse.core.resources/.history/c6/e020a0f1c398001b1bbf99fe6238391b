@@ -1,0 +1,116 @@
+/*
+ * funciones.c
+ *
+ *  Created on: 25 mar. 2021
+ *      Author: RYZEN 20
+ */
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+
+static int getInt(int* pResultado);
+static int myGets(char* cadena,int longitud);
+static int esNumerica(char* cadena);
+
+/**
+ * \brief Muestra el menu de opciones
+ * \param num1 es el valor del operandoUno
+ * \param num2 es el valor del operandoDos
+ * \param flagNum1 es el valor del flag del operandoUno
+ * \param flagNum2 es el valor del flag del operandoDos
+ * \return devuelve la opcion elegida
+ */
+int menu(int num1,int num2,int flagNum1,int flagNum2)
+{
+
+	int opcion;
+
+	if(flagNum1==0&&flagNum2==0)
+	{
+		system("cls");
+		printf("***MENU CALCULADORA*** \n\n");
+		printf("1.Ingrese el 1er operando (A=x)\n");
+		printf("2.Ingrese el 2do operando (B=y)\n");
+		printf("3.Calcular todas las operaciones \n");
+		printf("4.Informar resultados \n");
+		printf("5.Salir \n");
+
+		printf("Ingrese opcion:");
+		scanf("%d",&opcion);
+
+	}
+	else
+	{
+		if(flagNum1==1&&flagNum2==0)
+		{
+			system("cls");
+			printf("***MENU CALCULADORA*** \n\n");
+			printf("1.Ingrese el 1er operando (A=%d)\n",num1);
+			printf("2.Ingrese el 2do operando (B=y)\n");
+			printf("3.Calcular todas las operaciones \n");
+			printf("4.Informar resultados \n");
+			printf("5.Salir \n");
+
+			printf("Ingrese opcion:");
+			scanf("%d",&opcion);
+
+		}
+		else
+		{
+			system("cls");
+			printf("***MENU CALCULADORA*** \n\n");
+			printf("1.Ingrese el 1er operando (A=%d)\n",num1);
+			printf("2.Ingrese el 2do operando (B=%d)\n",num2);
+			printf("3.Calcular todas las operaciones \n");
+			printf("4.Informar resultados \n");
+			printf("5.Salir \n");
+
+			printf("Ingrese opcion:");
+			scanf("%d",&opcion);
+		}
+	}
+
+	return opcion;
+}
+
+/**
+ * brief valida que el dato ingresado sea numerico
+ * param pResultado, se carga en la direccion de memoria en numero ingresado
+ * param mensaje, es el mensaje para ingresar numero
+ * param mensajeError, es el mensaje que se ejecuta en caso de que no sea de tipo numerico
+ * return devuelve el retorno -1 si no es numerico y 0 si es numerico
+ */
+int getNumero(int* pResultado, char* mensaje,char* mensajeError)
+{
+	int retorno;
+	int auxiliar;
+	int verifica;
+
+	retorno=-1;
+
+	if(pResultado!=NULL && mensaje!=NULL && mensajeError!=NULL )
+	{
+
+		printf("%s",mensaje);
+		verifica=scanf("%d",&auxiliar);
+		if(verifica)
+		{
+				*pResultado=auxiliar;
+				retorno=0;
+		}
+		else
+		{
+			fflush(stdin);
+			printf("%s",mensajeError);
+			system("pause");
+		}
+	}
+
+	return retorno;
+}
+
+
+
+
+

@@ -8,13 +8,9 @@
 #ifndef FUNCIONES_H_
 #define FUNCIONES_H_
 
-int menu();
-int getNumero(int* pResultado, char* mensaje,char* mensajeError);
+int menu(int num1,int num2,int flagNum1,int flagNum2);
+int utn_getNumero(int* pResultado,char* mensaje, char* mensajeError, int minimo, int maximo, int reintentos);
 
-int sumar(int operadorUno,int operadorDos);
-int restar(int operadorUno,int operadorDos);
-int multiplicar(int operadorUno,int operadorDos);
-int dividir(int operadorUno,int operadorDos,float*pResultado);
-int factorial(int operador,long long int* pResultado);
+
 
 #endif /* FUNCIONES_H_ */

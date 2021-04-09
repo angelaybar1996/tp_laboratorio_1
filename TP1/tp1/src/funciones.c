@@ -6,168 +6,179 @@
  */
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
+#include <string.h>
+
+static int getInt(int* pResultado);
+static int myGets(char* cadena,int longitud);
+static int esNumerica(char* cadena);
 
 /**
- * brief Muestra el menu de opciones
- * return devuelve la opcion elegida
+ * \brief Muestra el menu de opciones
+ * \param num1 es el valor del operandoUno
+ * \param num2 es el valor del operandoDos
+ * \param flagNum1 es el valor del flag del operandoUno
+ * \param flagNum2 es el valor del flag del operandoDos
+ * \return devuelve la opcion elegida
  */
-int menu()
+int menu(int num1,int num2,int flagNum1,int flagNum2)
 {
+
 	int opcion;
 
-	system("cls");
-	printf("***MENU DE OPCIONES*** \n\n");
+	if(flagNum1==0&&flagNum2==0)
+	{
+		system("cls");
+		printf("***MENU CALCULADORA*** \n\n");
+		printf("1.Ingrese el 1er operando (A=x)\n");
+		printf("2.Ingrese el 2do operando (B=y)\n");
+		printf("3.Calcular todas las operaciones \n");
+		printf("4.Informar resultados \n");
+		printf("5.Salir \n");
 
-	printf("1.Ingrese el 1er operando \n");
-	printf("2.Ingrese el 2do operando \n");
-	printf("3.Calcular todas las operaciones \n");
-	printf("4.Informar resultados \n");
-	printf("5.Salir \n");
+		printf("Ingrese opcion:");
+		scanf("%d",&opcion);
 
-	printf("Ingrese opcion:");
-	scanf("%d",&opcion);
+	}
+	else
+	{
+		if(flagNum1==1&&flagNum2==0)
+		{
+			system("cls");
+			printf("***MENU CALCULADORA*** \n\n");
+			printf("1.Ingrese el 1er operando (A=%d)\n",num1);
+			printf("2.Ingrese el 2do operando (B=y)\n");
+			printf("3.Calcular todas las operaciones \n");
+			printf("4.Informar resultados \n");
+			printf("5.Salir \n");
+
+			printf("Ingrese opcion:");
+			scanf("%d",&opcion);
+
+		}
+		else
+		{
+			system("cls");
+			printf("***MENU CALCULADORA*** \n\n");
+			printf("1.Ingrese el 1er operando (A=%d)\n",num1);
+			printf("2.Ingrese el 2do operando (B=%d)\n",num2);
+			printf("3.Calcular todas las operaciones \n");
+			printf("4.Informar resultados \n");
+			printf("5.Salir \n");
+
+			printf("Ingrese opcion:");
+			scanf("%d",&opcion);
+		}
+	}
 
 	return opcion;
 }
 
 /**
- * brief valida que el dato ingresado sea numerico
- * param pResultado, se carga en la direccion de memoria en numero ingresado
- * param mensaje, es el mensaje para ingresar numero
- * param mensajeError, es el mensaje que se ejecuta en caso de que no sea de tipo numerico
- * return devuelve el retorno -1 si no es numerico y 0 si es numerico
+ *\brief solicita un numero al usuario, luego de verificarlo devuelve una respuesta
+ *\param pResultado, puntero al espacio de memoria donde se dejara el resultado de la funcion
+ *\param mensaje, es el mensaje a ser mostrado
+ *\param mensajeError, es el mensaje de error a ser mostrado cuando sea necesario
+ *\param minimo, es el numero minimo a ser aceptado
+ *\param maximo, es el numero maximo a ser aceptado
+ *\param reintentos, es la cantidad de oportunidades que tiene el usuario de operar
+ *\return retorna 0 si es un numero y  retorna -1 si no lo es
  */
-int getNumero(int* pResultado, char* mensaje,char* mensajeError)
+int utn_getNumero(int* pResultado,char* mensaje, char* mensajeError, int minimo, int maximo, int reintentos)
 {
 	int retorno;
-	int auxiliar;
-	int verifica;
+	retorno=-1;
+	int buffer;
 
+	if(pResultado!=  NULL && mensaje != NULL && mensajeError != NULL && minimo<=maximo && reintentos>=0)
+	{
+		do
+		{
+			printf("%s",mensaje);
+			fflush(stdin);
+
+			if(getInt(&buffer)==0 && buffer>=minimo && buffer<=maximo)
+			{
+				*pResultado=buffer;
+				retorno=0;
+				break;
+			}
+			reintentos--;
+			printf("%s",mensajeError);
+
+		}while(reintentos>=0);
+	}
+	return retorno;
+}
+/**
+ *\brief verifica si la cadena ingresada es entera
+ *\param pResultado, puntero al espacio de memoria donde se dejara el resultado de la funcion
+ *\return retorna 0(Exito) y -1 (Error)
+ */
+static int getInt(int* pResultado)
+{
+	int retorno;
+	retorno=-1;
+	char buffer[4096];
+
+	if(myGets(buffer,sizeof(buffer))==0 && esNumerica (buffer))
+	{
+		retorno=0;
+		*pResultado=atoi(buffer);
+	}
+	return retorno;
+}
+/**
+ * \brief Lee de stdin hasta que encuentra un '\n'(enter) o hasta que haya copiado en cadena un maximo de 'longitud-1' caracteres.
+ * \param pResultado, puntero al espacio de memoria donde se copiara la cadena obtenida
+ * \param longitud, define el tamaño de cadena
+ * \return retorno 0 (EXITO) si se obtiene cadena , -1(ERROR) en caso contrario
+ */
+static int myGets(char* cadena,int longitud)
+{
+	int retorno;
 	retorno=-1;
 
-	if(pResultado!=NULL && mensaje!=NULL && mensajeError!=NULL )
+	if(cadena!=NULL && longitud>0 &&fgets(cadena,longitud,stdin)==cadena)//file gets//este lee el enter por eso se le hace este ajuste
 	{
-
-		printf("%s",mensaje);
-		verifica=scanf("%d",&auxiliar);
-		if(verifica)
+		fflush(stdin);
+		if(cadena[strlen(cadena)-1]=='\n')
 		{
-				*pResultado=auxiliar;
-				retorno=0;
+			cadena[strlen(cadena)-1]= '\0';
 		}
-		else
-		{
-			fflush(stdin);
-			printf("%s",mensajeError);
-			system("pause");
-		}
+		retorno=0;
 	}
 
 	return retorno;
 }
-
 /**
- * brief realiza la suma de dos parametros
- * param operadoUno es el primer numero que recibe
- * param operadorDos es el segundo numero que recibe
- * return retorno el resultado
+ *\brief verifica si la cadena ingresada es numerica entera
+ *\param cadena, cadena de caracteres a ser analizada
+ *\return, retorna -1 si es verdadera y 0 si es falsa
  */
-int sumar(int operadorUno,int operadorDos)
+static int esNumerica(char* cadena)
 {
-    int resultado;
-    resultado=operadorUno+operadorDos;
+	int retorno=-1;
+	int i=0;
 
-    return resultado;
+	if(cadena!=NULL && strlen(cadena)>0)
+	{
+		for(i=0;cadena[i]!='\0';i++)
+		{
+			if(i==0 && (cadena[i]=='-'||cadena[i]=='+'))
+			{
+				continue;
+			}
+			if(cadena[i]<'0'||cadena[i] >'9')
+			{
+				retorno=0;
+				break;
+			}
+
+		}
+	}
+	return retorno;
 }
 
-/**
- * brief realiza la resta de dos numeros
- * param operadoUno es el primer numero que recibe
- * param operadoDos es el segundo numero que recibe
- * return devuelve el resultado de la resta
- */
-int restar(int operadorUno,int operadorDos)
-{
-    int resultado;
-    resultado=operadorUno-operadorDos;
-
-    return resultado;
-}
-
-/**
- * brief realiza la multiplicacion de dos numeros
- * param operadorUno es el primer numero que recibe
- * param operadorDos es el segundo numero que recibe
- * return devuelve el resultado de la multiplicacion
- */
-int multiplicar(int operadorUno,int operadorDos)
-{
-    int resultado;
-    resultado=operadorUno*operadorDos;
-
-    return resultado;
-}
-
-/**
- * brief realiza la division de dos numeros
- * param operadorUno es el primer numero que recibe
- * param operadorDos es el segundo numero que recibe
- * param pResultado es la direccion de memoria donde se va a cargar el resultado
- * return devuelve -1 si no es posbible la division y 0 si es posible
- */
-int dividir(int operadorUno,int operadorDos,float*pResultado)
-{
-    int retorno;
-    float resultado;
-    retorno=-1;
-
-    if(pResultado!=NULL&&operadorDos!=0)
-    {
-        resultado=(float)operadorUno/operadorDos;
-        (*pResultado)=resultado;
-        retorno=0;
-    }
-    return retorno;
-}
-
-/**
- * brief Realiza el factorial de un numero
- * param operador es el numero que recibe
- * param pResultado es la direccion de memoria donde se va a mandar el resultado
- * return devuelve -1 en caso de que no se pueda realizar el factorial y 0 en caso de que si se pueda
- */
-int factorial(int operador,long long int* pResultado)
-{
-    long long int factorial;
-    int retorno;
-
-    factorial=1;
-    retorno=-1;
-
-    if(pResultado!= NULL && operador>=0 )
-    {
-    	retorno=0;
-
-        if(operador==0)
-        {
-            *pResultado=factorial;
-        }
-        else
-        {
-        	if(operador>0)
-        	{
-				 for(int i=1; i<=operador; i++)
-				 {
-					factorial=factorial*i;
-				 }
-			    *pResultado=factorial;
-        	}
-        }
-    }
-
-    return retorno;
-}
 
 
 

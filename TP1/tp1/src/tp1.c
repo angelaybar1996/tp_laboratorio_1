@@ -10,8 +10,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 #include "funciones.h"
+#include "ecuaciones.h"
 
 int main(void)
 {
@@ -33,8 +33,8 @@ int main(void)
 	int retornoDivision;
 	int retornoFactorialUno;
 	int retornoFactorialDos;
-	long long int factorialUno;
-	long long int factorialDos;
+    int factorialUno;
+	int factorialDos;
 
 	salir='n';
 	respuesta='n';
@@ -44,16 +44,16 @@ int main(void)
 
 	do
 	{
-		opcion=menu();
+		opcion=menu(operandoUno,operandoDos,flagA,flagB);
 
 		switch(opcion)
 		{
 		   case 1:
 
-			  validacion=getNumero(&operandoUno,"Ingrese el 1er operando:","Error,debe ingresar un numero entero \n");
+			  validacion=utn_getNumero(&operandoUno,"Ingrese el 1er operando:", "Error,debe ingresar un numero entero\n", -1000, 1000,100);
+
 			  if(validacion==0)
 			  {
-				  printf("A:%d \n",operandoUno);
 				  system("pause");
 				  flagA=1;
 			  }
@@ -61,15 +61,14 @@ int main(void)
 		   case 2:
 			   if(flagA==0)
 			   {
-				   printf("primero hay que ir a la opcion 1 \n");
+				   printf("primero hay que ir a la opcion 1 \n\n");
 				   system("pause");
 			   }
 			   else
 			   {
-				  validacion=getNumero(&operandoDos,"Ingrese el 2do operando:","Error,debe ingresar un numero entero \n");
+				  validacion=utn_getNumero(&operandoDos,"Ingrese el 2do operando:", "Error,debe ingresar un numero entero \n", -1000, 1000, 100);
 				  if(validacion==0)
 				  {
-					  printf("B:%d \n",operandoDos);
 					  system("pause");
 					  flagB=1;
 				  }
@@ -78,7 +77,7 @@ int main(void)
 		  case 3:
 			  if(flagA==0||flagB==0)
 			  {
-				  printf("primero hay que ir a la opcion 1 y despues a la opcion 2 \n");
+				  printf("primero hay que ir a la opcion 1 y despues a la opcion 2 \n\n");
 				  system("pause");
 			  }
 			  else
@@ -92,14 +91,14 @@ int main(void)
 				  retornoFactorialUno=factorial(operandoUno,&factorialUno);
 				  retornoFactorialDos=factorial(operandoDos,&factorialDos);
 
-				  printf("TODAS LAS OPERACIONES FUERON CALCULADAS \n");
+				  printf("TODAS LAS OPERACIONES FUERON CALCULADAS \n\n");
 				  system("pause");
 			  }
 		  break;
 		  case 4:
 			  if(flagC==0)
 			  {
-				  printf("primero hay que pasar por la opcion 3 \n");
+				  printf("primero hay que pasar por la opcion 3 \n\n");
 				  system("pause");
 			  }
 			  else
@@ -124,7 +123,7 @@ int main(void)
 
 				  if(retornoFactorialUno==0)
 				  {
-					  printf("El factorial de %d es %lld \n",operandoUno,factorialUno);
+					  printf("El factorial de %d es %d \n",operandoUno,factorialUno);
 				  }
 				  else
 				  {
@@ -133,7 +132,7 @@ int main(void)
 
 				  if(retornoFactorialDos==0)
 				  {
-					  printf("El factorial de %d es %lld \n",operandoDos,factorialDos);
+					  printf("El factorial de %d es %d \n",operandoDos,factorialDos);
 				  }
 				  else
 				  {
