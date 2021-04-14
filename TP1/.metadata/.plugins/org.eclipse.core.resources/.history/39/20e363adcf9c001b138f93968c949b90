@@ -56,7 +56,7 @@ int multiplicar(int operadorUno,int operadorDos)
  * \param operadorUno es el primer numero que recibe
  * \param operadorDos es el segundo numero que recibe
  * \param pResultado es la direccion de memoria donde se va a cargar el resultado
- * \return devuelve -1 si no es posible la division y 0 si es posible
+ * \return devuelve -1 si no es posbible la division y 0 si es posible
  */
 int dividir(int operadorUno,int operadorDos,float*pResultado)
 {
