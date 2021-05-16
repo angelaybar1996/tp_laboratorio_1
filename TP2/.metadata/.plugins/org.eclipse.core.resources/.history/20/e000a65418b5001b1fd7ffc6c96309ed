@@ -1,0 +1,46 @@
+
+#ifndef ARRAYEMPLOYEES_H_
+#define ARRAYEMPLOYEES_H_
+
+#define TAM_NOMBRE 51
+#define TAM_APELLIDO 51
+
+typedef struct{
+
+    int id;
+    char name[TAM_NOMBRE];
+    char lastName[TAM_APELLIDO];
+    float salary;
+    int sector;
+    int isEmpty;
+
+}Employee;
+
+int initEmployees(Employee* list, int len);
+int addEmployees(Employee* list, int len,int id,char name[],char lastName[],float salary,int sector);//ex buscar libre
+int findEmployeeById(Employee* list, int len, int id);
+int removeEmployee(Employee* list, int len,int id);
+int sortEmployees(Employee* list, int len,int order);
+int printEmployees(Employee* list, int len);
+int mostrarEmpleado(eEmpleado* unEmpleado,eSector sectores[],int tamSec);
+
+
+int altaEmpleado(eEmpleado lista[],int tam,eSector sectores[],int tamSec,int* pLegajo);
+
+
+
+int menuModificar(eEmpleado lista[],int tam,int indice);//el menu
+int modificarEmpleado(eEmpleado lista[],int tam,int indice);//este modifica todo los datos
+int menuOrdenar(eEmpleado* lista, int tam);
+int ordenarNombres(eEmpleado* lista, int tam,int cri);
+int ordenarEdades(eEmpleado* lista, int tam,int cri);
+int ordenarSexos(eEmpleado* lista, int tam,int cri);
+int ordenarSueldos(eEmpleado* lista, int tam,int cri);
+int ordenarFnacimiento(eEmpleado* lista, int tam,int cri);
+int ordenarFingreso(eEmpleado* lista, int tam,int cri);
+
+int cargarNombreEmpleado(int legajo,eEmpleado lista[],int tame,char nombre[]);
+
+
+
+#endif /* ARRAYEMPLOYEES_H_ */

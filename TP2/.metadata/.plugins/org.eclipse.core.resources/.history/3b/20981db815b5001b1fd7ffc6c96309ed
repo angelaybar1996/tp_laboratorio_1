@@ -1,0 +1,23 @@
+
+#ifndef ARRAYEMPLOYEES_H_
+#define ARRAYEMPLOYEES_H_
+
+typedef struct{
+
+    int legajo;
+    int idSector;
+    char nombre[TAM_NOMBRE];
+    int edad;
+    char sexo;
+    float sueldo;
+    eFecha fNacimiento;
+    eFecha fIngreso;
+    int isEmpty;
+    char telefono[TAM_TEL];
+    char mail[TAM_MAIL];
+
+}eEmpleado;
+
+
+
+#endif /* ARRAYEMPLOYEES_H_ */

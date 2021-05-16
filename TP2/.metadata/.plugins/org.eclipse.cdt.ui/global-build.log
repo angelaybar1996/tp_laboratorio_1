@@ -1,0 +1,154 @@
+14:45:29 **** Rebuild of configuration Debug for project employe ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arrayEmployees.o" "..\\src\\arrayEmployees.c" 
+In file included from ..\src\arrayEmployees.c:5:
+..\src\arrayEmployees.h:28:21: error: unknown type name 'eEmpleado'
+   28 | int mostrarEmpleado(eEmpleado* unEmpleado,eSector sectores[],int tamSec);
+      |                     ^~~~~~~~~
+..\src\arrayEmployees.h:28:43: error: unknown type name 'eSector'
+   28 | int mostrarEmpleado(eEmpleado* unEmpleado,eSector sectores[],int tamSec);
+      |                                           ^~~~~~~
+..\src\arrayEmployees.h:31:18: error: unknown type name 'eEmpleado'
+   31 | int altaEmpleado(eEmpleado lista[],int tam,eSector sectores[],int tamSec,int* pLegajo);
+      |                  ^~~~~~~~~
+..\src\arrayEmployees.h:31:44: error: unknown type name 'eSector'
+   31 | int altaEmpleado(eEmpleado lista[],int tam,eSector sectores[],int tamSec,int* pLegajo);
+      |                                            ^~~~~~~
+..\src\arrayEmployees.h:33:19: error: unknown type name 'eEmpleado'
+   33 | int menuModificar(eEmpleado lista[],int tam,int indice);//el menu
+      |                   ^~~~~~~~~
+..\src\arrayEmployees.h:34:23: error: unknown type name 'eEmpleado'
+   34 | int modificarEmpleado(eEmpleado lista[],int tam,int indice);//este modifica todo los datos
+      |                       ^~~~~~~~~
+..\src\arrayEmployees.h:35:17: error: unknown type name 'eEmpleado'
+   35 | int menuOrdenar(eEmpleado* lista, int tam);
+      |                 ^~~~~~~~~
+..\src\arrayEmployees.h:36:20: error: unknown type name 'eEmpleado'
+   36 | int ordenarNombres(eEmpleado* lista, int tam,int cri);
+      |                    ^~~~~~~~~
+..\src\arrayEmployees.h:37:19: error: unknown type name 'eEmpleado'
+   37 | int ordenarEdades(eEmpleado* lista, int tam,int cri);
+      |                   ^~~~~~~~~
+..\src\arrayEmployees.h:38:18: error: unknown type name 'eEmpleado'
+   38 | int ordenarSexos(eEmpleado* lista, int tam,int cri);
+      |                  ^~~~~~~~~
+..\src\arrayEmployees.h:39:20: error: unknown type name 'eEmpleado'
+   39 | int ordenarSueldos(eEmpleado* lista, int tam,int cri);
+      |                    ^~~~~~~~~
+..\src\arrayEmployees.h:40:24: error: unknown type name 'eEmpleado'
+   40 | int ordenarFnacimiento(eEmpleado* lista, int tam,int cri);
+      |                        ^~~~~~~~~
+..\src\arrayEmployees.h:41:21: error: unknown type name 'eEmpleado'
+   41 | int ordenarFingreso(eEmpleado* lista, int tam,int cri);
+      |                     ^~~~~~~~~
+..\src\arrayEmployees.h:43:37: error: unknown type name 'eEmpleado'
+   43 | int cargarNombreEmpleado(int legajo,eEmpleado lista[],int tame,char nombre[]);
+      |                                     ^~~~~~~~~
+..\src\arrayEmployees.c:15:21: error: unknown type name 'eEmpleado'
+   15 | int mostrarEmpleado(eEmpleado* unEmpleado,eSector sectores[],int tamSec)
+      |                     ^~~~~~~~~
+..\src\arrayEmployees.c:15:43: error: unknown type name 'eSector'
+   15 | int mostrarEmpleado(eEmpleado* unEmpleado,eSector sectores[],int tamSec)
+      |                                           ^~~~~~~
+..\src\arrayEmployees.c:45:22: error: unknown type name 'eEmpleado'
+   45 | int mostrarEmpleados(eEmpleado* lista, int tam,eSector sectores[],int tamSec)
+      |                      ^~~~~~~~~
+..\src\arrayEmployees.c:45:48: error: unknown type name 'eSector'
+   45 | int mostrarEmpleados(eEmpleado* lista, int tam,eSector sectores[],int tamSec)
+      |                                                ^~~~~~~
+..\src\arrayEmployees.c:96:18: error: unknown type name 'eEmpleado'
+   96 | int altaEmpleado(eEmpleado lista[],int tam,eSector sectores[],int tamSec,int* pLegajo)
+      |                  ^~~~~~~~~
+..\src\arrayEmployees.c:96:44: error: unknown type name 'eSector'
+   96 | int altaEmpleado(eEmpleado lista[],int tam,eSector sectores[],int tamSec,int* pLegajo)
+      |                                            ^~~~~~~
+..\src\arrayEmployees.c:142:17: error: unknown type name 'eEmpleado'
+  142 | int buscarLibre(eEmpleado lista[],int tam)
+      |                 ^~~~~~~~~
+..\src\arrayEmployees.c:213:23: error: unknown type name 'eEmpleado'
+  213 | int modificarEmpleado(eEmpleado lista[],int tam,int indice)//modifica todos los datos
+      |                       ^~~~~~~~~
+..\src\arrayEmployees.c:249:19: error: unknown type name 'eEmpleado'
+  249 | int menuModificar(eEmpleado lista[],int tam,int indice)
+      |                   ^~~~~~~~~
+..\src\arrayEmployees.c:345:17: error: unknown type name 'eEmpleado'
+  345 | int menuOrdenar(eEmpleado* lista, int tam)
+      |                 ^~~~~~~~~
+..\src\arrayEmployees.c:407:21: error: unknown type name 'eEmpleado'
+  407 |  int ordenarNombres(eEmpleado* lista, int tam,int cri)
+      |                     ^~~~~~~~~
+..\src\arrayEmployees.c:439:20: error: unknown type name 'eEmpleado'
+  439 |  int ordenarEdades(eEmpleado* lista, int tam,int cri)
+      |                    ^~~~~~~~~
+..\src\arrayEmployees.c:471:19: error: unknown type name 'eEmpleado'
+  471 |  int ordenarSexos(eEmpleado* lista, int tam,int cri)
+      |                   ^~~~~~~~~
+..\src\arrayEmployees.c:503:21: error: unknown type name 'eEmpleado'
+  503 |  int ordenarSueldos(eEmpleado* lista, int tam,int cri)
+      |                     ^~~~~~~~~
+..\src\arrayEmployees.c:535:25: error: unknown type name 'eEmpleado'
+  535 |  int ordenarFnacimiento(eEmpleado* lista, int tam,int cri)
+      |                         ^~~~~~~~~
+..\src\arrayEmployees.c:571:22: error: unknown type name 'eEmpleado'
+  571 |  int ordenarFingreso(eEmpleado* lista, int tam,int cri)
+      |                      ^~~~~~~~~
+..\src\arrayEmployees.c:606:23: error: unknown type name 'eEmpleado'
+  606 | int ordenarSexoNombre(eEmpleado* lista, int tam)
+      |                       ^~~~~~~~~
+..\src\arrayEmployees.c:638:37: error: unknown type name 'eEmpleado'
+  638 | int cargarNombreEmpleado(int legajo,eEmpleado lista[],int tame,char nombre[])
+      |                                     ^~~~~~~~~
+12:44:28 **** Incremental Build of configuration Debug for project employe ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arrayEmployees.o" "..\\src\\arrayEmployees.c" 
+..\src\arrayEmployees.c:313:21: error: unknown type name 'eEmpleado'
+  313 |  int ordenarNombres(eEmpleado* lista, int tam,int cri)
+      |                     ^~~~~~~~~
+12:45:17 **** Incremental Build of configuration Debug for project employe ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arrayEmployees.o" "..\\src\\arrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\employe.o" "..\\src\\employe.c" 
+gcc -o employe.exe "src\\arrayEmployees.o" "src\\employe.o" "src\\utn.o" 
+12:51:47 **** Incremental Build of configuration Debug for project employe ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\employe.o" "..\\src\\employe.c" 
+gcc -o employe.exe "src\\arrayEmployees.o" "src\\employe.o" "src\\utn.o" 
+13:11:43 **** Incremental Build of configuration Debug for project employe ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arrayEmployees.o" "..\\src\\arrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\employe.o" "..\\src\\employe.c" 
+gcc -o employe.exe "src\\arrayEmployees.o" "src\\employe.o" "src\\utn.o" 
+13:17:44 **** Incremental Build of configuration Debug for project employe ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arrayEmployees.o" "..\\src\\arrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\employe.o" "..\\src\\employe.c" 
+gcc -o employe.exe "src\\arrayEmployees.o" "src\\employe.o" "src\\utn.o" 
+13:18:44 **** Incremental Build of configuration Debug for project employe ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\employe.o" "..\\src\\employe.c" 
+gcc -o employe.exe "src\\arrayEmployees.o" "src\\employe.o" "src\\utn.o" 
+Info: Nothing to build for employe
+13:35:00 **** Incremental Build of configuration Debug for project employe ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arrayEmployees.o" "..\\src\\arrayEmployees.c" 
+gcc -o employe.exe "src\\arrayEmployees.o" "src\\employe.o" "src\\utn.o" 
+Info: Nothing to build for employe
+13:46:40 **** Incremental Build of configuration Debug for project employe ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\employe.o" "..\\src\\employe.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arrayEmployees.o" "..\\src\\arrayEmployees.c" 
+gcc -o employe.exe "src\\arrayEmployees.o" "src\\employe.o" "src\\utn.o" 
+Info: Nothing to build for employe
+14:05:49 **** Incremental Build of configuration Debug for project employe ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arrayEmployees.o" "..\\src\\arrayEmployees.c" 
+gcc -o employe.exe "src\\arrayEmployees.o" "src\\employe.o" "src\\utn.o" 
+Info: Nothing to build for employe
+14:09:18 **** Incremental Build of configuration Debug for project employe ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\arrayEmployees.o" "..\\src\\arrayEmployees.c" 
+gcc -o employe.exe "src\\arrayEmployees.o" "src\\employe.o" "src\\utn.o" 
+Info: Nothing to build for employe
+Info: Nothing to build for employe
+Info: Nothing to build for employe
