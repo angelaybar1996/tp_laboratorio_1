@@ -152,3 +152,10 @@ gcc -o employe.exe "src\\arrayEmployees.o" "src\\employe.o" "src\\utn.o"
 Info: Nothing to build for employe
 Info: Nothing to build for employe
 Info: Nothing to build for employe
+01:52:35 **** Incremental Build of configuration Debug for project employe ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\employe.o" "..\\src\\employe.c" 
+gcc -o employe.exe "src\\arrayEmployees.o" "src\\employe.o" "src\\utn.o" 
+Info: Nothing to build for employe
+Info: Nothing to build for employe
+Info: Nothing to build for employe

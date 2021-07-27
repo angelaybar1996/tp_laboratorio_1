@@ -1,0 +1,840 @@
+18:50:36 **** Rebuild of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o -lLinkedList 
+12:04:14 **** Rebuild of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o -lLinkedList 
+12:35:02 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o -lLinkedList 
+11:45:16 **** Rebuild of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o utn.o "..\\utn.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+..\Employee.c: In function 'employee_setIdTxt':
+..\Employee.c:100:6: warning: implicit declaration of function 'isValidId' [-Wimplicit-function-declaration]
+  100 |   if(isValidId(id))
+      |      ^~~~~~~~~
+..\Employee.c: In function 'employee_setNombre':
+..\Employee.c:137:6: warning: implicit declaration of function 'isValidNombre' [-Wimplicit-function-declaration]
+  137 |   if(isValidNombre(nombre,NOMBRE_TAM))
+      |      ^~~~~~~~~~~~~
+..\Employee.c:139:4: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+  139 |    strcpy(this->nombre,nombre);
+      |    ^~~~~~
+..\Employee.c:139:4: warning: incompatible implicit declaration of built-in function 'strcpy'
+..\Employee.c:4:1: note: include '<string.h>' or provide a declaration of 'strcpy'
+    3 | #include "Employee.h"
+  +++ |+#include <string.h>
+    4 | 
+..\Employee.c: In function 'employee_getNombre':
+..\Employee.c:157:3: warning: incompatible implicit declaration of built-in function 'strcpy'
+  157 |   strcpy(nombre,this->nombre);
+      |   ^~~~~~
+..\Employee.c:157:3: note: include '<string.h>' or provide a declaration of 'strcpy'
+..\Employee.c: In function 'employee_setHorasTrabajadasTxt':
+..\Employee.c:209:6: warning: implicit declaration of function 'isValidHorasTrabajadas' [-Wimplicit-function-declaration]
+  209 |   if(isValidHorasTrabajadas(horasTrabajadas))
+      |      ^~~~~~~~~~~~~~~~~~~~~~
+..\Employee.c: In function 'employee_setSueldoTxt':
+..\Employee.c:285:6: warning: implicit declaration of function 'isValidSueldo' [-Wimplicit-function-declaration]
+  285 |   if(isValidSueldo(sueldo))
+      |      ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o: in function `employee_setIdTxt':
+C:\Users\RYZEN 20\Desktop\TP3\tp3_windows\Debug/../Employee.c:100: undefined reference to `isValidId'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o: in function `employee_setNombre':
+C:\Users\RYZEN 20\Desktop\TP3\tp3_windows\Debug/../Employee.c:137: undefined reference to `isValidNombre'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o: in function `employee_setHorasTrabajadasTxt':
+C:\Users\RYZEN 20\Desktop\TP3\tp3_windows\Debug/../Employee.c:209: undefined reference to `isValidHorasTrabajadas'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o: in function `employee_setSueldoTxt':
+C:\Users\RYZEN 20\Desktop\TP3\tp3_windows\Debug/../Employee.c:285: undefined reference to `isValidSueldo'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for tp3_windows
+Info: Nothing to build for tp3_windows
+Info: Nothing to build for tp3_windows
+11:45:29 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+..\Employee.c: In function 'employee_setIdTxt':
+..\Employee.c:100:6: warning: implicit declaration of function 'isValidId' [-Wimplicit-function-declaration]
+  100 |   if(isValidId(id))
+      |      ^~~~~~~~~
+..\Employee.c: In function 'employee_setNombre':
+..\Employee.c:137:6: warning: implicit declaration of function 'isValidNombre' [-Wimplicit-function-declaration]
+  137 |   if(isValidNombre(nombre,NOMBRE_TAM))
+      |      ^~~~~~~~~~~~~
+..\Employee.c:139:4: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+  139 |    strcpy(this->nombre,nombre);
+      |    ^~~~~~
+..\Employee.c:139:4: warning: incompatible implicit declaration of built-in function 'strcpy'
+..\Employee.c:4:1: note: include '<string.h>' or provide a declaration of 'strcpy'
+    3 | #include "Employee.h"
+  +++ |+#include <string.h>
+    4 | 
+..\Employee.c: In function 'employee_getNombre':
+..\Employee.c:157:3: warning: incompatible implicit declaration of built-in function 'strcpy'
+  157 |   strcpy(nombre,this->nombre);
+      |   ^~~~~~
+..\Employee.c:157:3: note: include '<string.h>' or provide a declaration of 'strcpy'
+..\Employee.c: In function 'employee_setHorasTrabajadasTxt':
+..\Employee.c:209:6: warning: implicit declaration of function 'isValidHorasTrabajadas' [-Wimplicit-function-declaration]
+  209 |   if(isValidHorasTrabajadas(horasTrabajadas))
+      |      ^~~~~~~~~~~~~~~~~~~~~~
+..\Employee.c: In function 'employee_setSueldoTxt':
+..\Employee.c:285:6: warning: implicit declaration of function 'isValidSueldo' [-Wimplicit-function-declaration]
+  285 |   if(isValidSueldo(sueldo))
+      |      ^~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o: in function `employee_setIdTxt':
+C:\Users\RYZEN 20\Desktop\TP3\tp3_windows\Debug/../Employee.c:100: undefined reference to `isValidId'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o: in function `employee_setNombre':
+C:\Users\RYZEN 20\Desktop\TP3\tp3_windows\Debug/../Employee.c:137: undefined reference to `isValidNombre'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o: in function `employee_setHorasTrabajadasTxt':
+C:\Users\RYZEN 20\Desktop\TP3\tp3_windows\Debug/../Employee.c:209: undefined reference to `isValidHorasTrabajadas'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o: in function `employee_setSueldoTxt':
+C:\Users\RYZEN 20\Desktop\TP3\tp3_windows\Debug/../Employee.c:285: undefined reference to `isValidSueldo'
+collect2.exe: error: ld returned 1 exit status
+11:45:30 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o: in function `employee_setIdTxt':
+C:\Users\RYZEN 20\Desktop\TP3\tp3_windows\Debug/../Employee.c:100: undefined reference to `isValidId'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o: in function `employee_setNombre':
+C:\Users\RYZEN 20\Desktop\TP3\tp3_windows\Debug/../Employee.c:137: undefined reference to `isValidNombre'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o: in function `employee_setHorasTrabajadasTxt':
+C:\Users\RYZEN 20\Desktop\TP3\tp3_windows\Debug/../Employee.c:209: undefined reference to `isValidHorasTrabajadas'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o: in function `employee_setSueldoTxt':
+C:\Users\RYZEN 20\Desktop\TP3\tp3_windows\Debug/../Employee.c:285: undefined reference to `isValidSueldo'
+collect2.exe: error: ld returned 1 exit status
+11:52:10 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+12:58:07 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c:36:5: error: conflicting types for 'controller_addEmployee'
+   36 | int controller_addEmployee(LinkedList* pArrayListEmployee,int limite,int* id)
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\Controller.c:5:
+..\Controller.h:6:5: note: previous declaration of 'controller_addEmployee' was here
+    6 | int controller_addEmployee(LinkedList* pArrayListEmployee);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_addEmployee':
+..\Controller.c:42:5: error: 'arrayPunteros' undeclared (first use in this function)
+   42 |  if(arrayPunteros!=NULL && limite>0 && id!=NULL)
+      |     ^~~~~~~~~~~~~
+..\Controller.c:42:5: note: each undeclared identifier is reported only once for each function it appears in
+..\Controller.c:47:9: warning: implicit declaration of function 'alumno_agregarAlumnoArray' [-Wimplicit-function-declaration]
+   47 |      if(alumno_agregarAlumnoArray(arrayPunteros, limite, auxNombre, auxAltura, *id)!=-1)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+14:46:18 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c:36:5: error: conflicting types for 'controller_addEmployee'
+   36 | int controller_addEmployee(LinkedList* pArrayListEmployee,int limite,int* id)
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\Controller.c:5:
+..\Controller.h:6:5: note: previous declaration of 'controller_addEmployee' was here
+    6 | int controller_addEmployee(LinkedList* pArrayListEmployee);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_addEmployee':
+..\Controller.c:42:5: error: 'arrayPunteros' undeclared (first use in this function)
+   42 |  if(arrayPunteros!=NULL && limite>0 && id!=NULL)
+      |     ^~~~~~~~~~~~~
+..\Controller.c:42:5: note: each undeclared identifier is reported only once for each function it appears in
+..\Controller.c:47:9: warning: implicit declaration of function 'alumno_agregarAlumnoArray' [-Wimplicit-function-declaration]
+   47 |      if(alumno_agregarAlumnoArray(arrayPunteros, limite, auxNombre, auxAltura, *id)!=-1)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+15:15:09 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c:36:5: error: conflicting types for 'controller_addEmployee'
+   36 | int controller_addEmployee(LinkedList* pArrayListEmployee,int* id)
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\Controller.c:5:
+..\Controller.h:6:5: note: previous declaration of 'controller_addEmployee' was here
+    6 | int controller_addEmployee(LinkedList* pArrayListEmployee);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_addEmployee':
+..\Controller.c:47:9: warning: implicit declaration of function 'alumno_agregarAlumnoArray' [-Wimplicit-function-declaration]
+   47 |      if(alumno_agregarAlumnoArray(arrayPunteros, limite, auxNombre, auxAltura, *id)!=-1)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c:47:35: error: 'arrayPunteros' undeclared (first use in this function)
+   47 |      if(alumno_agregarAlumnoArray(arrayPunteros, limite, auxNombre, auxAltura, *id)!=-1)
+      |                                   ^~~~~~~~~~~~~
+..\Controller.c:47:35: note: each undeclared identifier is reported only once for each function it appears in
+..\Controller.c:47:50: error: 'limite' undeclared (first use in this function)
+   47 |      if(alumno_agregarAlumnoArray(arrayPunteros, limite, auxNombre, auxAltura, *id)!=-1)
+      |                                                  ^~~~~~
+15:15:54 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_addEmployee':
+..\Controller.c:42:33: error: 'id' undeclared (first use in this function)
+   42 |  if(pArrayListEmployee!=NULL && id!=NULL)
+      |                                 ^~
+..\Controller.c:42:33: note: each undeclared identifier is reported only once for each function it appears in
+..\Controller.c:47:9: warning: implicit declaration of function 'alumno_agregarAlumnoArray' [-Wimplicit-function-declaration]
+   47 |      if(alumno_agregarAlumnoArray(arrayPunteros, limite, auxNombre, auxAltura, *id)!=-1)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c:47:35: error: 'arrayPunteros' undeclared (first use in this function)
+   47 |      if(alumno_agregarAlumnoArray(arrayPunteros, limite, auxNombre, auxAltura, *id)!=-1)
+      |                                   ^~~~~~~~~~~~~
+..\Controller.c:47:50: error: 'limite' undeclared (first use in this function)
+   47 |      if(alumno_agregarAlumnoArray(arrayPunteros, limite, auxNombre, auxAltura, *id)!=-1)
+      |                                                  ^~~~~~
+15:16:05 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_addEmployee':
+..\Controller.c:47:9: warning: implicit declaration of function 'alumno_agregarAlumnoArray' [-Wimplicit-function-declaration]
+   47 |      if(alumno_agregarAlumnoArray(arrayPunteros, limite, auxNombre, auxAltura, *id)!=-1)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c:47:35: error: 'arrayPunteros' undeclared (first use in this function)
+   47 |      if(alumno_agregarAlumnoArray(arrayPunteros, limite, auxNombre, auxAltura, *id)!=-1)
+      |                                   ^~~~~~~~~~~~~
+..\Controller.c:47:35: note: each undeclared identifier is reported only once for each function it appears in
+..\Controller.c:47:50: error: 'limite' undeclared (first use in this function)
+   47 |      if(alumno_agregarAlumnoArray(arrayPunteros, limite, auxNombre, auxAltura, *id)!=-1)
+      |                                                  ^~~~~~
+..\Controller.c:47:81: error: 'id' undeclared (first use in this function)
+   47 |      if(alumno_agregarAlumnoArray(arrayPunteros, limite, auxNombre, auxAltura, *id)!=-1)
+      |                                                                                 ^~
+15:16:48 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:33:24: error: 'opcion' undeclared (first use in this function); did you mean 'option'?
+   33 |      if(utn_getNumero(&opcion,
+      |                        ^~~~~~
+      |                        option
+..\main.c:33:24: note: each undeclared identifier is reported only once for each function it appears in
+..\main.c:69:11: error: too few arguments to function 'controller_addEmployee'
+   69 |       if(!controller_addEmployee(listaEmpleados))
+      |           ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\main.c:4:
+..\Controller.h:6:5: note: declared here
+    6 | int controller_addEmployee(LinkedList* pArrayListEmployee,int* pId);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+..\main.c:28:9: warning: unused variable 'nextId' [-Wunused-variable]
+   28 |     int nextId=1001;
+      |         ^~~~~~
+15:17:08 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_addEmployee':
+..\Controller.c:47:9: warning: implicit declaration of function 'alumno_agregarAlumnoArray' [-Wimplicit-function-declaration]
+   47 |      if(alumno_agregarAlumnoArray(arrayPunteros, limite, auxNombre, auxAltura, *id)!=-1)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c:47:35: error: 'arrayPunteros' undeclared (first use in this function)
+   47 |      if(alumno_agregarAlumnoArray(arrayPunteros, limite, auxNombre, auxAltura, *id)!=-1)
+      |                                   ^~~~~~~~~~~~~
+..\Controller.c:47:35: note: each undeclared identifier is reported only once for each function it appears in
+..\Controller.c:47:50: error: 'limite' undeclared (first use in this function)
+   47 |      if(alumno_agregarAlumnoArray(arrayPunteros, limite, auxNombre, auxAltura, *id)!=-1)
+      |                                                  ^~~~~~
+..\Controller.c:47:81: error: 'id' undeclared (first use in this function)
+   47 |      if(alumno_agregarAlumnoArray(arrayPunteros, limite, auxNombre, auxAltura, *id)!=-1)
+      |                                                                                 ^~
+15:17:36 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_addEmployee':
+..\Controller.c:47:9: warning: implicit declaration of function 'alumno_agregarAlumnoArray' [-Wimplicit-function-declaration]
+   47 |      if(alumno_agregarAlumnoArray(arrayPunteros, limite, auxNombre, auxAltura, *id)!=-1)
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c:47:35: error: 'arrayPunteros' undeclared (first use in this function)
+   47 |      if(alumno_agregarAlumnoArray(arrayPunteros, limite, auxNombre, auxAltura, *id)!=-1)
+      |                                   ^~~~~~~~~~~~~
+..\Controller.c:47:35: note: each undeclared identifier is reported only once for each function it appears in
+..\Controller.c:47:50: error: 'limite' undeclared (first use in this function)
+   47 |      if(alumno_agregarAlumnoArray(arrayPunteros, limite, auxNombre, auxAltura, *id)!=-1)
+      |                                                  ^~~~~~
+..\Controller.c:47:81: error: 'id' undeclared (first use in this function)
+   47 |      if(alumno_agregarAlumnoArray(arrayPunteros, limite, auxNombre, auxAltura, *id)!=-1)
+      |                                                                                 ^~
+12:33:14 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_addEmployee':
+..\Controller.c:51:4: warning: 'auxEmpleado' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   51 |    employee_getHorasTrabajadas(auxEmpleado, &auxHorasTrabajadas);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:69:11: error: too few arguments to function 'controller_addEmployee'
+   69 |       if(!controller_addEmployee(listaEmpleados))
+      |           ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\main.c:4:
+..\Controller.h:6:5: note: declared here
+    6 | int controller_addEmployee(LinkedList* pArrayListEmployee,int* pId);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+..\main.c:28:9: warning: unused variable 'nextId' [-Wunused-variable]
+   28 |     int nextId=1001;
+      |         ^~~~~~
+12:34:41 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+Info: Nothing to build for tp3_windows
+13:06:50 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+13:11:31 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+14:04:45 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c:14:5: error: conflicting types for 'controller_loadFromText'
+   14 | int controller_loadFromText(char* path , LinkedList* pArrayListEmployee,int* nextId)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\Controller.c:5:
+..\Controller.h:4:5: note: previous declaration of 'controller_loadFromText' was here
+    4 | int controller_loadFromText(char* path , LinkedList* pArrayListEmployee);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_loadFromText':
+..\Controller.c:20:7: warning: unused variable 'auxId' [-Wunused-variable]
+   20 |  char auxId[100];
+      |       ^~~~~
+..\Controller.c:19:7: warning: unused variable 'auxAltura' [-Wunused-variable]
+   19 |  char auxAltura[100];
+      |       ^~~~~~~~~
+..\Controller.c:18:7: warning: unused variable 'auxNombre' [-Wunused-variable]
+   18 |  char auxNombre[NOMBRE_TAM];
+      |       ^~~~~~~~~
+14:09:58 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c:14:5: error: conflicting types for 'controller_loadFromText'
+   14 | int controller_loadFromText(char* path , LinkedList* pArrayListEmployee,int* nextId)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\Controller.c:5:
+..\Controller.h:4:5: note: previous declaration of 'controller_loadFromText' was here
+    4 | int controller_loadFromText(char* path , LinkedList* pArrayListEmployee);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c:59:5: error: conflicting types for 'controller_loadFromBinary'
+   59 | int controller_loadFromBinary(char* path , LinkedList* pArrayListEmployee,int* nextId)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\Controller.c:5:
+..\Controller.h:5:5: note: previous declaration of 'controller_loadFromBinary' was here
+    5 | int controller_loadFromBinary(char* path , LinkedList* pArrayListEmployee);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_loadFromBinary':
+..\Controller.c:74:5: warning: implicit declaration of function 'parser_EmployeeFromBinary' [-Wimplicit-function-declaration]
+   74 |     parser_EmployeeFromBinary(fpArchivo, pArrayListEmployee, auxEmpleado);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_loadFromText':
+..\Controller.c:52:1: warning: control reaches end of non-void function [-Wreturn-type]
+   52 | }
+      | ^
+14:11:31 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c:14:5: error: conflicting types for 'controller_loadFromText'
+   14 | int controller_loadFromText(char* path , LinkedList* pArrayListEmployee,int* nextId)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\Controller.c:5:
+..\Controller.h:4:5: note: previous declaration of 'controller_loadFromText' was here
+    4 | int controller_loadFromText(char* path , LinkedList* pArrayListEmployee);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c:59:5: error: conflicting types for 'controller_loadFromBinary'
+   59 | int controller_loadFromBinary(char* path , LinkedList* pArrayListEmployee,int* nextId)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\Controller.c:5:
+..\Controller.h:5:5: note: previous declaration of 'controller_loadFromBinary' was here
+    5 | int controller_loadFromBinary(char* path , LinkedList* pArrayListEmployee);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_loadFromBinary':
+..\Controller.c:74:5: warning: implicit declaration of function 'parser_EmployeeFromBinary' [-Wimplicit-function-declaration]
+   74 |     parser_EmployeeFromBinary(fpArchivo, pArrayListEmployee, auxEmpleado);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_loadFromText':
+..\Controller.c:52:1: warning: control reaches end of non-void function [-Wreturn-type]
+   52 | }
+      | ^
+15:05:57 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+..\parser.c: In function 'parser_EmployeeFromBinary':
+..\parser.c:38:4: error: break statement not within loop or switch
+   38 |    break;
+      |    ^~~~~
+15:08:22 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_loadFromBinary':
+..\Controller.c:74:5: warning: implicit declaration of function 'parser_EmployeeFromBinary' [-Wimplicit-function-declaration]
+   74 |     parser_EmployeeFromBinary(fpArchivo, pArrayListEmployee, auxEmpleado);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_loadFromText':
+..\Controller.c:52:1: warning: control reaches end of non-void function [-Wreturn-type]
+   52 | }
+      | ^
+..\Controller.c: In function 'controller_loadFromBinary':
+..\Controller.c:74:5: warning: 'auxEmpleado' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   74 |     parser_EmployeeFromBinary(fpArchivo, pArrayListEmployee, auxEmpleado);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_ListEmployee':
+..\Controller.c:160:30: warning: 'auxEmpleado' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  160 |  if(pArrayListEmployee!=NULL && auxEmpleado!=NULL)
+      |                              ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+..\parser.c: In function 'parser_EmployeeFromBinary':
+..\parser.c:39:4: error: break statement not within loop or switch
+   39 |    break;
+      |    ^~~~~
+15:12:28 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_loadFromBinary':
+..\Controller.c:72:4: warning: implicit declaration of function 'parser_EmployeeFromBinary' [-Wimplicit-function-declaration]
+   72 |    parser_EmployeeFromBinary(fpArchivo, pArrayListEmployee, auxEmpleado);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_loadFromText':
+..\Controller.c:52:1: warning: control reaches end of non-void function [-Wreturn-type]
+   52 | }
+      | ^
+..\Controller.c: In function 'controller_loadFromBinary':
+..\Controller.c:72:4: warning: 'auxEmpleado' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   72 |    parser_EmployeeFromBinary(fpArchivo, pArrayListEmployee, auxEmpleado);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_ListEmployee':
+..\Controller.c:157:30: warning: 'auxEmpleado' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  157 |  if(pArrayListEmployee!=NULL && auxEmpleado!=NULL)
+      |                              ^
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+15:19:51 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_loadFromBinary':
+..\Controller.c:72:4: warning: implicit declaration of function 'parser_EmployeeFromBinary' [-Wimplicit-function-declaration]
+   72 |    parser_EmployeeFromBinary(fpArchivo, pArrayListEmployee, auxEmpleado);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_loadFromText':
+..\Controller.c:52:1: warning: control reaches end of non-void function [-Wreturn-type]
+   52 | }
+      | ^
+..\Controller.c: In function 'controller_ListEmployee':
+..\Controller.c:158:30: warning: 'auxEmpleado' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  158 |  if(pArrayListEmployee!=NULL && auxEmpleado!=NULL)
+      |                              ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+15:21:06 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_loadFromBinary':
+..\Controller.c:73:4: warning: implicit declaration of function 'parser_EmployeeFromBinary' [-Wimplicit-function-declaration]
+   73 |    parser_EmployeeFromBinary(fpArchivo, pArrayListEmployee, auxEmpleado);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_ListEmployee':
+..\Controller.c:159:30: warning: 'auxEmpleado' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  159 |  if(pArrayListEmployee!=NULL && auxEmpleado!=NULL)
+      |                              ^
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+Info: Nothing to build for tp3_windows
+15:23:39 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+Info: Nothing to build for tp3_windows
+13:44:30 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_loadFromBinary':
+..\Controller.c:73:4: warning: implicit declaration of function 'parser_EmployeeFromBinary' [-Wimplicit-function-declaration]
+   73 |    parser_EmployeeFromBinary(fpArchivo, pArrayListEmployee, auxEmpleado);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c:73:4: warning: 'auxEmpleado' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   73 |    parser_EmployeeFromBinary(fpArchivo, pArrayListEmployee, auxEmpleado);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_ListEmployee':
+..\Controller.c:158:30: warning: 'auxEmpleado' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  158 |  if(pArrayListEmployee!=NULL && auxEmpleado!=NULL)
+      |                              ^
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+14:17:00 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+..\parser.c: In function 'parser_EmployeeFromText':
+..\parser.c:17:12: warning: variable 'auxEmpleado' set but not used [-Wunused-but-set-variable]
+   17 |  Employee* auxEmpleado;
+      |            ^~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_loadFromText':
+..\Controller.c:22:7: warning: unused variable 'auxSueldo' [-Wunused-variable]
+   22 |  char auxSueldo[100];
+      |       ^~~~~~~~~
+..\Controller.c:21:7: warning: unused variable 'auxId' [-Wunused-variable]
+   21 |  char auxId[100];
+      |       ^~~~~
+..\Controller.c:20:7: warning: unused variable 'auxHoras' [-Wunused-variable]
+   20 |  char auxHoras[100];
+      |       ^~~~~~~~
+..\Controller.c:19:7: warning: unused variable 'auxNombre' [-Wunused-variable]
+   19 |  char auxNombre[NOMBRE_TAM];
+      |       ^~~~~~~~~
+..\Controller.c: In function 'controller_loadFromBinary':
+..\Controller.c:56:4: warning: implicit declaration of function 'parser_EmployeeFromBinary' [-Wimplicit-function-declaration]
+   56 |    parser_EmployeeFromBinary(fpArchivo, pArrayListEmployee, auxEmpleado);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c:56:4: warning: 'auxEmpleado' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   56 |    parser_EmployeeFromBinary(fpArchivo, pArrayListEmployee, auxEmpleado);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+14:28:23 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+14:31:13 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_loadFromText':
+..\Controller.c:30:4: warning: implicit declaration of function 'parser_EmployeeFromText' [-Wimplicit-function-declaration]
+   30 |    parser_EmployeeFromText(fpArchivo, pArrayListEmployee, auxId, auxNombre, auxHoras, auxSueldo);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_loadFromBinary':
+..\Controller.c:55:4: warning: implicit declaration of function 'parser_EmployeeFromBinary' [-Wimplicit-function-declaration]
+   55 |    parser_EmployeeFromBinary(fpArchivo, pArrayListEmployee, auxEmpleado);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c:55:4: warning: 'auxEmpleado' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   55 |    parser_EmployeeFromBinary(fpArchivo, pArrayListEmployee, auxEmpleado);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+Info: Nothing to build for tp3_windows
+15:26:20 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_loadFromText':
+..\Controller.c:30:4: warning: implicit declaration of function 'parser_EmployeeFromText' [-Wimplicit-function-declaration]
+   30 |    parser_EmployeeFromText(fpArchivo, pArrayListEmployee, auxId, auxNombre, auxHoras, auxSueldo);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_loadFromBinary':
+..\Controller.c:55:4: warning: implicit declaration of function 'parser_EmployeeFromBinary' [-Wimplicit-function-declaration]
+   55 |    parser_EmployeeFromBinary(fpArchivo,pArrayListEmployee,auxEmpleado);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_saveAsText':
+..\Controller.c:203:24: error: incompatible type for argument 1 of 'employee_getId'
+  203 |     if(!employee_getId(*(auxEmpleado+i),&auxId) &&
+      |                        ^~~~~~~~~~~~~~~~
+      |                        |
+      |                        Employee {aka struct <anonymous>}
+In file included from ..\Controller.c:4:
+..\Employee.h:18:30: note: expected 'Employee *' {aka 'struct <anonymous> *'} but argument is of type 'Employee' {aka 'struct <anonymous>'}
+   18 | int employee_getId(Employee* this,int* id);
+      |                    ~~~~~~~~~~^~~~
+..\Controller.c:204:28: error: incompatible type for argument 1 of 'employee_getNombre'
+  204 |        !employee_getNombre(*(auxEmpleado+i), auxNombre) &&
+      |                            ^~~~~~~~~~~~~~~~
+      |                            |
+      |                            Employee {aka struct <anonymous>}
+In file included from ..\Controller.c:4:
+..\Employee.h:23:34: note: expected 'Employee *' {aka 'struct <anonymous> *'} but argument is of type 'Employee' {aka 'struct <anonymous>'}
+   23 | int employee_getNombre(Employee* this,char* nombre);
+      |                        ~~~~~~~~~~^~~~
+..\Controller.c:205:37: error: incompatible type for argument 1 of 'employee_getHorasTrabajadas'
+  205 |        !employee_getHorasTrabajadas(*(auxEmpleado+i),&auxHoras) &&
+      |                                     ^~~~~~~~~~~~~~~~
+      |                                     |
+      |                                     Employee {aka struct <anonymous>}
+In file included from ..\Controller.c:4:
+..\Employee.h:26:43: note: expected 'Employee *' {aka 'struct <anonymous> *'} but argument is of type 'Employee' {aka 'struct <anonymous>'}
+   26 | int employee_getHorasTrabajadas(Employee* this,float* horasTrabajadas);
+      |                                 ~~~~~~~~~~^~~~
+..\Controller.c:206:28: error: incompatible type for argument 1 of 'employee_getSueldo'
+  206 |        !employee_getSueldo(*(auxEmpleado+i), & auxSueldo))
+      |                            ^~~~~~~~~~~~~~~~
+      |                            |
+      |                            Employee {aka struct <anonymous>}
+In file included from ..\Controller.c:4:
+..\Employee.h:31:34: note: expected 'Employee *' {aka 'struct <anonymous> *'} but argument is of type 'Employee' {aka 'struct <anonymous>'}
+   31 | int employee_getSueldo(Employee* this,float* sueldo);
+      |                        ~~~~~~~~~~^~~~
+15:28:29 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_loadFromText':
+..\Controller.c:30:4: warning: implicit declaration of function 'parser_EmployeeFromText' [-Wimplicit-function-declaration]
+   30 |    parser_EmployeeFromText(fpArchivo, pArrayListEmployee, auxId, auxNombre, auxHoras, auxSueldo);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_loadFromBinary':
+..\Controller.c:55:4: warning: implicit declaration of function 'parser_EmployeeFromBinary' [-Wimplicit-function-declaration]
+   55 |    parser_EmployeeFromBinary(fpArchivo,pArrayListEmployee,auxEmpleado);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_saveAsText':
+..\Controller.c:203:24: error: incompatible type for argument 1 of 'employee_getId'
+  203 |     if(!employee_getId(*(auxEmpleado+i),&auxId) &&
+      |                        ^~~~~~~~~~~~~~~~
+      |                        |
+      |                        Employee {aka struct <anonymous>}
+In file included from ..\Controller.c:4:
+..\Employee.h:18:30: note: expected 'Employee *' {aka 'struct <anonymous> *'} but argument is of type 'Employee' {aka 'struct <anonymous>'}
+   18 | int employee_getId(Employee* this,int* id);
+      |                    ~~~~~~~~~~^~~~
+..\Controller.c:204:28: error: incompatible type for argument 1 of 'employee_getNombre'
+  204 |        !employee_getNombre(*(auxEmpleado+i), auxNombre) &&
+      |                            ^~~~~~~~~~~~~~~~
+      |                            |
+      |                            Employee {aka struct <anonymous>}
+In file included from ..\Controller.c:4:
+..\Employee.h:23:34: note: expected 'Employee *' {aka 'struct <anonymous> *'} but argument is of type 'Employee' {aka 'struct <anonymous>'}
+   23 | int employee_getNombre(Employee* this,char* nombre);
+      |                        ~~~~~~~~~~^~~~
+..\Controller.c:205:37: error: incompatible type for argument 1 of 'employee_getHorasTrabajadas'
+  205 |        !employee_getHorasTrabajadas(*(auxEmpleado+i),&auxHoras) &&
+      |                                     ^~~~~~~~~~~~~~~~
+      |                                     |
+      |                                     Employee {aka struct <anonymous>}
+In file included from ..\Controller.c:4:
+..\Employee.h:26:43: note: expected 'Employee *' {aka 'struct <anonymous> *'} but argument is of type 'Employee' {aka 'struct <anonymous>'}
+   26 | int employee_getHorasTrabajadas(Employee* this,float* horasTrabajadas);
+      |                                 ~~~~~~~~~~^~~~
+..\Controller.c:206:28: error: incompatible type for argument 1 of 'employee_getSueldo'
+  206 |        !employee_getSueldo(*(auxEmpleado+i), & auxSueldo))
+      |                            ^~~~~~~~~~~~~~~~
+      |                            |
+      |                            Employee {aka struct <anonymous>}
+In file included from ..\Controller.c:4:
+..\Employee.h:31:34: note: expected 'Employee *' {aka 'struct <anonymous> *'} but argument is of type 'Employee' {aka 'struct <anonymous>'}
+   31 | int employee_getSueldo(Employee* this,float* sueldo);
+      |                        ~~~~~~~~~~^~~~
+15:29:07 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_loadFromText':
+..\Controller.c:30:4: warning: implicit declaration of function 'parser_EmployeeFromText' [-Wimplicit-function-declaration]
+   30 |    parser_EmployeeFromText(fpArchivo, pArrayListEmployee, auxId, auxNombre, auxHoras, auxSueldo);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_loadFromBinary':
+..\Controller.c:55:4: warning: implicit declaration of function 'parser_EmployeeFromBinary' [-Wimplicit-function-declaration]
+   55 |    parser_EmployeeFromBinary(fpArchivo,pArrayListEmployee,auxEmpleado);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_saveAsText':
+..\Controller.c:205:37: error: incompatible type for argument 1 of 'employee_getHorasTrabajadas'
+  205 |        !employee_getHorasTrabajadas(*(auxEmpleado),&auxHoras) &&
+      |                                     ^~~~~~~~~~~~~~
+      |                                     |
+      |                                     Employee {aka struct <anonymous>}
+In file included from ..\Controller.c:4:
+..\Employee.h:26:43: note: expected 'Employee *' {aka 'struct <anonymous> *'} but argument is of type 'Employee' {aka 'struct <anonymous>'}
+   26 | int employee_getHorasTrabajadas(Employee* this,float* horasTrabajadas);
+      |                                 ~~~~~~~~~~^~~~
+..\Controller.c:206:28: error: incompatible type for argument 1 of 'employee_getSueldo'
+  206 |        !employee_getSueldo(*(auxEmpleado), & auxSueldo))
+      |                            ^~~~~~~~~~~~~~
+      |                            |
+      |                            Employee {aka struct <anonymous>}
+In file included from ..\Controller.c:4:
+..\Employee.h:31:34: note: expected 'Employee *' {aka 'struct <anonymous> *'} but argument is of type 'Employee' {aka 'struct <anonymous>'}
+   31 | int employee_getSueldo(Employee* this,float* sueldo);
+      |                        ~~~~~~~~~~^~~~
+15:29:39 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_loadFromText':
+..\Controller.c:30:4: warning: implicit declaration of function 'parser_EmployeeFromText' [-Wimplicit-function-declaration]
+   30 |    parser_EmployeeFromText(fpArchivo, pArrayListEmployee, auxId, auxNombre, auxHoras, auxSueldo);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_loadFromBinary':
+..\Controller.c:55:4: warning: implicit declaration of function 'parser_EmployeeFromBinary' [-Wimplicit-function-declaration]
+   55 |    parser_EmployeeFromBinary(fpArchivo,pArrayListEmployee,auxEmpleado);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c:55:4: warning: 'auxEmpleado' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   55 |    parser_EmployeeFromBinary(fpArchivo,pArrayListEmployee,auxEmpleado);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+Info: Nothing to build for tp3_windows
+Info: Nothing to build for tp3_windows
+15:32:33 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_loadFromText':
+..\Controller.c:30:4: warning: implicit declaration of function 'parser_EmployeeFromText' [-Wimplicit-function-declaration]
+   30 |    parser_EmployeeFromText(fpArchivo, pArrayListEmployee, auxId, auxNombre, auxHoras, auxSueldo);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_loadFromBinary':
+..\Controller.c:55:4: warning: implicit declaration of function 'parser_EmployeeFromBinary' [-Wimplicit-function-declaration]
+   55 |    parser_EmployeeFromBinary(fpArchivo,pArrayListEmployee,auxEmpleado);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c:55:4: warning: 'auxEmpleado' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   55 |    parser_EmployeeFromBinary(fpArchivo,pArrayListEmployee,auxEmpleado);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+15:37:27 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_loadFromText':
+..\Controller.c:30:4: warning: implicit declaration of function 'parser_EmployeeFromText' [-Wimplicit-function-declaration]
+   30 |    parser_EmployeeFromText(fpArchivo, pArrayListEmployee, auxId, auxNombre, auxHoras, auxSueldo);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_loadFromBinary':
+..\Controller.c:55:4: warning: implicit declaration of function 'parser_EmployeeFromBinary' [-Wimplicit-function-declaration]
+   55 |    parser_EmployeeFromBinary(fpArchivo,pArrayListEmployee,auxEmpleado);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+10:40:41 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+In file included from ..\parser.c:3:
+..\parser.h:4:43: error: unknown type name 'LinkedList'
+    4 | int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee,char auxId[],char auxNombre[],char auxHoras[],char auxSueldo[]);//listo
+      |                                           ^~~~~~~~~~
+In file included from ..\parser.c:3:
+..\parser.h:5:45: error: unknown type name 'LinkedList'
+    5 | int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee,Employee* auxEmpleado);//listo
+      |                                             ^~~~~~~~~~
+..\parser.h:5:76: error: unknown type name 'Employee'
+    5 | int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee,Employee* auxEmpleado);//listo
+      |                                                                            ^~~~~~~~
+..\parser.c:12:43: error: unknown type name 'LinkedList'
+   12 | int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee,char auxId[],char auxNombre[],char auxHoras[],char auxSueldo[])
+      |                                           ^~~~~~~~~~
+..\parser.c:40:45: error: unknown type name 'LinkedList'
+   40 | int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee,Employee* auxEmpleado)
+      |                                             ^~~~~~~~~~
+..\parser.c:40:76: error: unknown type name 'Employee'
+   40 | int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee,Employee* auxEmpleado)
+      |                                                                            ^~~~~~~~
+10:44:25 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_loadFromText':
+..\Controller.c:28:4: warning: implicit declaration of function 'parser_EmployeeFromText' [-Wimplicit-function-declaration]
+   28 |    parser_EmployeeFromText(fpArchivo, pArrayListEmployee, auxId, auxNombre, auxHoras, auxSueldo);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~
+..\Controller.c: In function 'controller_loadFromBinary':
+..\Controller.c:53:4: warning: implicit declaration of function 'parser_EmployeeFromBinary' [-Wimplicit-function-declaration]
+   53 |    parser_EmployeeFromBinary(fpArchivo,pArrayListEmployee,auxEmpleado);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+10:45:30 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+11:02:08 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+11:56:12 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+Info: Nothing to build for tp3_windows
+Info: Nothing to build for tp3_windows
+14:29:14 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+Info: Nothing to build for tp3_windows
+Info: Nothing to build for tp3_windows
+Info: Nothing to build for tp3_windows
+14:05:29 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_editEmployee':
+..\Controller.c:138:5: warning: implicit declaration of function 'employee_setAltura'; did you mean 'employee_setNombre'? [-Wimplicit-function-declaration]
+  138 |     employee_setAltura(auxEmpleado, auxHoras);
+      |     ^~~~~~~~~~~~~~~~~~
+      |     employee_setNombre
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Controller.o: in function `controller_editEmployee':
+C:\Users\RYZEN 20\Desktop\TP3\tp3_windows\Debug/../Controller.c:138: undefined reference to `employee_setAltura'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\Users\RYZEN 20\Desktop\TP3\tp3_windows\Debug/../Controller.c:139: undefined reference to `employee_setAltura'
+collect2.exe: error: ld returned 1 exit status
+14:07:52 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+14:10:20 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+14:47:36 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+14:53:28 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+Info: Nothing to build for tp3_windows
+15:07:12 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+Info: Nothing to build for tp3_windows
+Info: Nothing to build for tp3_windows
+Info: Nothing to build for tp3_windows
+Info: Nothing to build for tp3_windows
+Info: Nothing to build for tp3_windows
+16:13:19 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+Info: Nothing to build for tp3_windows
+17:09:20 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+17:23:50 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+17:45:49 **** Incremental Build of configuration Debug for project tp3_windows ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+gcc "-LC:\\Users\\RYZEN 20\\Desktop\\TP3\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o main.o parser.o utn.o -lLinkedList 
+Info: Nothing to build for tp3_windows
+Info: Nothing to build for tp3_windows

@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "LinkedList.h"
+#include "Employee.h"
+#include "parser.h"
+
+/** \brief Parsea los datos los datos de los empleados desde el archivo data.csv (modo texto).
+ *
+ * \param path char*
+ * \param pArrayListEmployee LinkedList*
+ * \return int
+ *
+ */
+int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
+{
+
+	do
+				{
+					if(fscanf(fpArchivo,"%[^,],%[^,],%[^,],%[^\n]\n",auxId,auxNombre,auxHoras,auxSueldo)==4)
+					{
+						 alumno_agregarAlumnoArrayTxt(arrayPunteros, limite, auxNombre, auxAltura, auxId);
+					}
+
+				}while(!feof(fpArchivo));
+    return 1;
+}
+
+/** \brief Parsea los datos los datos de los empleados desde el archivo data.bin (modo binario).
+ *
+ * \param path char*
+ * \param pArrayListEmployee LinkedList*
+ * \return int
+ *
+ */
+int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee,Employee* auxEmpleado)
+{
+	int cant;
+
+	do
+	{
+		auxEmpleado=employee_new();
+
+		if(auxEmpleado!=NULL)
+		{
+			cant = fread(auxEmpleado,sizeof(Employee),1,pFile);
+			if(cant<1)
+			{
+				break;
+			}
+			else
+			{
+				ll_add(pArrayListEmployee, auxEmpleado);
+			}
+		}
+
+	}while(!feof(pFile));
+
+    return 1;
+}
+
+
+
